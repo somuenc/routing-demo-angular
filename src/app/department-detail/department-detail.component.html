@@ -1,0 +1,23 @@
+<h3>You selected department Id {{ departmentId }}</h3>
+<p>
+  <button (click)="showOverview()">Overview</button>
+  <button (click)="showContact()">Contact</button>
+</p>
+
+<p>
+  <router-outlet></router-outlet>
+</p>
+
+<p>
+  <button (click)="goPrev()">Previous</button>
+  <button (click)="goNext()">Next</button>
+</p>
+<p>
+  <button (click)="goBack()">Back</button>
+</p>
+<br/>
+<ul class="items">
+  <li *ngFor="let name of names">
+    {{ name }}
+  </li>
+</ul>
